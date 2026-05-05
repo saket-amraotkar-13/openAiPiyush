@@ -1,0 +1,15 @@
+1. Hosted MCP server tools --> instead your code calling MCP server, OpenAI server invike MCP tool calling
+
+LLM (gpt-4.1)
+
+Agent(LLM(gpt-4.1), HostedMCPServer('github url))
+
+result = run (agent, query)
+ 
+[Client]  -> query --> OpenAI Server (gpt-4.1) --> MCP tools --> response from MCP tool --> OpenAI Server --> [Client]
+
+
+2. Streamable HTTP MCP Servers
+Client - query -> OpenAI server (gpt 4.1) (mCP tool request) --> client --> call mcp server endpoint -- respomse from mcp server-->
+mcp server response --> send back to openAI server --> OpenAi send response back to client
+
